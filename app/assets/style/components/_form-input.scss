@@ -1,0 +1,12 @@
+.form-input {
+  input {
+    position: relative;
+  }
+  i {
+    position: absolute;
+    left: 10px;
+    top: 36%;
+    z-index: 99;
+    color: $primary;
+  }
+}

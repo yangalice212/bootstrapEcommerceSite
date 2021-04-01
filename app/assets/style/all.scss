@@ -1,5 +1,7 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../style/helpers/variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
-@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../style/components/header";
+@import "../style/components/utilites";
+@import "../style/components/form-input";
