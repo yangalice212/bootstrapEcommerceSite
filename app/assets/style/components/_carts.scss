@@ -1,0 +1,32 @@
+.cart {
+  img {
+    max-width: 110px;
+    max-height: 110px;
+  }
+  .cart-input {
+    width: 145px;
+    height: 48px;
+  }
+  .price {
+    @include media-breakpoint-down(sm) {
+      border-top: 1px solid $info;
+    }
+  }
+  .cart-detail {
+    background: $primary;
+    color: white;
+    table {
+      color: white;
+    }
+    @include media-breakpoint-down(sm) {
+      background: white;
+      color: $primary;
+      h2 {
+        background: $info;
+      }
+      table {
+        color: $primary;
+      }
+    }
+  }
+}

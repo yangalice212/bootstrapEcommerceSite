@@ -1,0 +1,41 @@
+---
+title: 電子發票
+layout: ./app/layout-checkout.ejs
+engine: ejs
+current: checkout-invoice-electronic
+---
+
+<form class="row g-0 needs-validation bg-primary text-info" action="finish.html" novalidate>
+  <div class="row g-2 px-6 py-5">
+    <div class="bg-primary text-info d-flex justify-content-between align-items-end mb-5 mt-0">
+      <h1 class="h2 mb-0">發票</h1>
+      <div class="process-step d-flex">
+        <div class="step"><i class="fas fa-check-circle"></i></div>
+        <div class="step"><i class="fas fa-check-circle"></i></div>
+        <div class="step active"><i class="fas fa-circle"></i></div>
+      </div>
+    </div>
+    <div class="col-12 input-group mb-5">
+      <a href="checkout-invoice-electronic.html" class="w-50">
+        <input type="radio" class="btn-check" name="electronicInvoice" id="electronicInvoice" autocomplete="off" checked>
+        <label class="btn btn-lg btn-outline-info text-primary w-100" for="success-outlined">電子發票</label>
+      </a>  
+      <a href="checkout-invoice-paper.html" class="w-50">
+        <input type="radio" class="btn-check" name="paperInvoice" id="paperInvoice" autocomplete="off">
+        <label class="btn btn-lg btn-outline-info w-100" for="danger-outlined">郵寄發票</label>
+      </a>
+    </div>
+    <div class="col-12 mt-0">
+      <label for="inputEmail" class="col-form-label-lg">電子郵件信箱</label>
+      <input type="email" class="form-control bg-info px-4 py-3" id="inputEmail" placeholder="example@email.com" required>
+      <div class="invalid-feedback">
+        請輸入 Email
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputGuiNum" class="col-form-label-lg">統一編號（選填）</label>
+      <input type="text" class="form-control bg-info px-4 py-3" id="inputGuiNum" placeholder="12345678">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-lg btn-secondary text-primary fw-bold w-100 py-3">確認結帳</button>
+</form>

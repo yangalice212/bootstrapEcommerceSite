@@ -1,0 +1,75 @@
+---
+title: 付款
+layout: ./app/layout-checkout.ejs
+engine: ejs
+current: checkout-payment
+---
+
+<form class="row g-0 needs-validation bg-primary text-info" action="checkout-invoice-electronic.html" novalidate>
+  <div class="row g-2 px-6 py-5">
+    <div class="bg-primary text-info d-flex justify-content-between align-items-end mb-5 mt-0">
+      <h1 class="h2 mb-0">付款</h1>
+      <div class="process-step d-flex">
+        <div class="step"><i class="fas fa-check-circle"></i></div>
+        <div class="step active"><i class="fas fa-circle"></i></div>
+        <div class="step"><i class="far fa-circle"></i></div>
+      </div>
+    </div>
+    <div class="col-12 form-input form-input-right">
+      <label for="inputCreditCard" class="col-form-label-lg">信用卡卡號</label>
+      <div class="input-group">
+        <input type="text" class="form-control bg-info px-4 py-3" id="inputCreditCard" placeholder="9012-3456-7890-1234" required>
+        <i class="far fa-credit-card text-primary form-input-right"></i>
+        <div class="invalid-feedback">
+          請輸入信用卡卡號
+        </div>
+      </div>
+    </div>
+    <label for="inputCity" class="col-form-label-lg">持卡人姓名</label>
+    <div class="col-6 mt-0">
+      <label for="inputLastName" class="col-form-label-lg visually-hidden">姓氏</label>
+      <input type="text" class="form-control bg-info px-4 py-3" id="inputLastName" placeholder="王" required>
+      <div class="invalid-feedback">
+        請輸入姓氏
+      </div>
+    </div>
+    <div class="col-6 mt-0">
+      <label for="inputFirstName" class="col-form-label-lg visually-hidden">名字</label>
+      <input type="text" class="form-control bg-info px-4 py-3" id="inputFirstName" placeholder="小明" required>
+      <div class="invalid-feedback">
+        請輸入名字
+      </div>
+    </div>
+    <label for="inputMonth" class="form-label">有效期限</label>
+    <div class="col-6 mt-0">
+      <label for="inputMonth" class="col-form-label-lg visually-hidden">Month</label>
+      <select id="inputMonth" class="form-select bg-info px-4 py-3" required>
+        <option selected disabled>月</option>
+        <option>1月</option>
+        <option>2月</option>
+      </select>
+      <div class="invalid-feedback">
+        請輸入到期月份
+      </div>
+    </div>
+    <div class="col-6 mt-0">
+      <label for="inputYear" class="col-form-label-lg visually-hidden">Year</label>
+      <select id="inputYear" class="form-select bg-info px-4 py-3" required>
+        <option selected disabled>年</option>
+        <option>2021</option>
+        <option>2022</option>
+      </select>
+      <div class="invalid-feedback">
+        請輸入到期年份
+      </div>
+    </div>
+    <div class="col-6">
+      <label for="inputSafeCode" class="col-form-label-lg">背面末三碼</label>
+      <input type="number" class="form-control bg-info px-4 py-3" id="inputSafeCode" placeholder="123" required>
+      <div class="invalid-feedback">
+        請輸入背面末三碼
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-lg btn-secondary text-primary fw-bold w-100 py-3">下一步</button>
+</form>

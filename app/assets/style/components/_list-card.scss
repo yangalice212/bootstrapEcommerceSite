@@ -1,0 +1,31 @@
+.list-card {
+  .list-card-item {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  &-img {
+    height: 315px;
+    position: relative;
+    img {
+      height: 315px;
+    }
+  }
+  &-tag,
+  &-favor {
+    position: absolute;
+  }
+  &-tag {
+    left: 20px;
+    top: 0;
+    letter-spacing: 5px;
+  }
+  &-favor {
+    right: 22px;
+    top: 19px;
+  }
+  &-info {
+    display: flex;
+    text-align: center;
+    border: 1px solid $info;
+  }
+}

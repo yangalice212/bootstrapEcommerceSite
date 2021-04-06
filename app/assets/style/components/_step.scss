@@ -1,0 +1,30 @@
+.process-step {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #8da291;
+  }
+  &-finish {
+    &::after {
+      background: $primary;
+    }
+  }
+  .step {
+    background: $primary;
+    z-index: 1;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-right: 60px;
+    }
+    &.active {
+      border: 1px solid $info;
+      border-radius: 50%;
+      padding: 0 3.5px;
+    }
+  }
+}

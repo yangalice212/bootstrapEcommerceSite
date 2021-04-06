@@ -1,0 +1,73 @@
+---
+title: 郵寄發票
+layout: ./app/layout-checkout.ejs
+engine: ejs
+current: checkout-invoice-paper
+---
+
+<form class="row g-0 needs-validation bg-primary text-info" action="finish.html" novalidate>
+  <div class="row g-2 px-6 py-5">
+    <div class="bg-primary text-info d-flex justify-content-between align-items-end mb-5 mt-0">
+      <h1 class="h2 mb-0">發票</h1>
+      <div class="process-step d-flex">
+        <div class="step"><i class="fas fa-check-circle"></i></div>
+        <div class="step"><i class="fas fa-check-circle"></i></div>
+        <div class="step active"><i class="fas fa-circle"></i></div>
+      </div>
+    </div>
+    <div class="col-12 input-group mb-5">
+      <a href="checkout-invoice-electronic.html" class="w-50">
+        <input type="radio" class="btn-check" name="electronicInvoice" id="electronicInvoice" autocomplete="off">
+        <label class="btn btn-lg btn-outline-info w-100" for="success-outlined">電子發票</label>
+      </a>  
+      <a href="checkout-invoice-paper.html" class="w-50">
+        <input type="radio" class="btn-check" name="paperInvoice" id="paperInvoice" autocomplete="off" checked>
+        <label class="btn btn-lg btn-outline-info text-primary w-100" for="danger-outlined">郵寄發票</label>
+      </a>
+    </div>  
+    <div class="d-flex align-items-center justify-content-between mt-0">
+      <label for="inputCity" class="col-form-label-lg">地址</label>
+      <div class="form-check mb-0">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          同運送地址
+        </label>
+      </div>
+    </div>  
+    <div class="col-6 mt-0">
+      <label for="inputCity" class="col-form-label-lg visually-hidden">City</label>
+      <select id="inputCity" class="form-select bg-info px-4 py-3" required>
+        <option selected>高雄市</option>
+        <option>台北市</option>
+        <option>台中市</option>
+      </select>
+      <div class="invalid-feedback">
+        請輸入城市
+      </div>
+    </div>
+    <div class="col-6 mt-0">
+      <label for="inputState" class="col-form-label-lg visually-hidden">State</label>
+      <select id="inputState" class="form-select bg-info px-4 py-3" required>
+        <option selected>新興區</option>
+        <option>中正區</option>
+        <option>北區</option>
+      </select>
+      <div class="invalid-feedback">
+        請輸入地區
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputAddreess" class="col-form-label-lg visually-hidden">Address</label>
+      <input type="text" class="form-control bg-info px-4 py-3" id="inputAddreess" placeholder="幸福路 520 號" required>
+      <div class="invalid-feedback">
+        請輸入地址
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputGuiNum" class="col-form-label-lg">統一編號（選填）</label>
+      <input type="text" class="form-control bg-info px-4 py-3" id="inputGuiNum" placeholder="12345678">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-lg btn-secondary text-primary fw-bold w-100 py-3">確認結帳</button>
+</form>
+

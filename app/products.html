@@ -5,13 +5,15 @@ engine: ejs
 current: products
 ---
 
-<section class="container p-0">
-  <div class="product-banner w-100 bg-cover"></div>
+<section class="container p-0 px-md-4 mb-0 mb-md-8">
+  <div class="banner w-100 bg-cover d-flex justify-content-end" style="background-image: url(https://images.unsplash.com/photo-1549675584-91f19337af3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8bGlicmFyeXxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+    <img src="./assets/images/lg-想看書是不需要理由的.png" alt="想看書是不需要理由的" width="110" class="d-none d-md-block me-7 mt-3">
+  </div>
 </section>
 
-<main class="container my-8 p-0">
-  <div class="row g-0 g-md-4">
-    <aside class="col-md-4 col-lg-3 text-center">
+<main class="container mb-8 p-0 px-md-4">
+  <div class="row g-0 g-md-4 justify-content-center">
+    <aside class="col-md-4 text-center mb-3">
       <h2 class="h4 bg-primary text-white mb-0 py-3">書籍類別</h2>
       <div class="list-group h4" id="list-tab" role="tablist">
         <a class="list-group-item list-group-item-action active py-3" id="list-home-list" data-bs-toggle="list" href="#list-all" role="tab" aria-controls="all">所有書籍 (48)</a>
@@ -20,14 +22,275 @@ current: products
         <a class="list-group-item list-group-item-action py-3" id="list-settings-list" data-bs-toggle="list" href="#list-new" role="tab" aria-controls="new">新品上架 (12)</a>
       </div>
     </aside>
-    <section class="col-md-8 col-md-9">
+    <section class="col-md-8">
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="list-all" role="tabpanel" aria-labelledby="list-all-list">
-          ...
+          <ul class="row g-0 g-sm-4 list-unstyled">
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8Ym9va3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGJvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1598618443855-232ee0f819f6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTR8fGJvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1588496444520-4708e2c133a3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTc1fHxib29rfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1585852738589-c585bb9a05b2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTg4fHxib29rfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1613753584258-965377a71662?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTk2fHxib29rfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="tab-pane fade" id="list-pin" role="tabpanel" aria-labelledby="list-pin-list">...</div>
-        <div class="tab-pane fade" id="list-popular" role="tabpanel" aria-labelledby="list-popular-list">...</div>
-        <div class="tab-pane fade" id="list-new" role="tabpanel" aria-labelledby="list-new-list">...</div>
+        <div class="tab-pane fade" id="list-pin" role="tabpanel" aria-labelledby="list-pin-list">
+          <ul class="row g-0 g-sm-4 list-unstyled">
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8Ym9va3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGJvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1598618443855-232ee0f819f6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTR8fGJvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="list-popular" role="tabpanel" aria-labelledby="list-popular-list">
+          <ul class="row g-0 g-sm-4 list-unstyled">
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1598618443855-232ee0f819f6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTR8fGJvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1588496444520-4708e2c133a3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTc1fHxib29rfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1585852738589-c585bb9a05b2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTg4fHxib29rfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="list-new" role="tabpanel" aria-labelledby="list-new-list">
+          <ul class="row g-0 g-sm-4 list-unstyled">
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1585852738589-c585bb9a05b2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTg4fHxib29rfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+            <li class="list-card col-sm-6 mb-4">
+              <div class="list-card-item">
+                <div class="list-card-img bg-cover" style="background-image: url(https://images.unsplash.com/photo-1613753584258-965377a71662?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTk2fHxib29rfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                  <div class="list-card-tag">
+                    <span class="bg-primary text-white text-vertical p-2">本日精選</span>
+                  </div>
+                  <div class="list-card-favor">
+                    <a href="#"><i class="far fa-heart text-primary"></i></a>
+                  </div>
+                </div>
+                <div class="list-card-info text-primary">
+                  <h3 class="h5 fw-light py-3 px-2 px-lg-5 mb-0 border-end border-info col">散文選集</h3>
+                  <p class="h5 mb-0 py-3 px-2 px-lg-5 col">NT$ 450</p>
+                </div>
+                <a href="#" class="btn btn-info btn-lg w-100 py-3 text-primary">加入購物車</a>  
+              </div>
+            </li>
+          </ul>
+        </div>
+        <nav aria-label="Page navigation">
+          <ul class="pagination pagination-lg justify-content-center justify-content-md-end">
+            <li class="page-item">
+              <a class="page-link" href="#"><i class="fas fa-caret-left"></i></a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#"><i class="fas fa-caret-right"></i></a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </section>
   </div>

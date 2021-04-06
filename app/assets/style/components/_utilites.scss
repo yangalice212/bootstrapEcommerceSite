@@ -11,3 +11,9 @@
   left: 0;
   right: 0;
 }
+.btn-size {
+  width: 25%;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}

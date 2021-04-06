@@ -1,0 +1,71 @@
+---
+title: 運送
+layout: ./app/layout-checkout.ejs
+engine: ejs
+current: checkout-deliver
+---
+
+<form class="row g-0 needs-validation bg-primary text-info" action="checkout-payment.html" novalidate>
+  <div class="row g-2 px-6 py-5">
+    <div class="bg-primary text-info d-flex justify-content-between align-items-end mb-5 mt-0">
+      <h1 class="h2 mb-0">運送</h1>
+      <div class="process-step d-flex">
+        <div class="step active"><i class="fas fa-circle"></i></div>
+        <div class="step"><i class="far fa-circle"></i></div>
+        <div class="step"><i class="far fa-circle"></i></div>
+      </div>
+    </div>
+    <div class="col-6 mt-0">
+      <label for="inputLastName" class="col-form-label-lg">姓氏</label>
+      <input type="text" class="form-control bg-info px-4 py-3" id="inputLastName" placeholder="王" required>
+      <div class="invalid-feedback">
+        請輸入姓氏
+      </div>
+    </div>
+    <div class="col-6 mt-0">
+      <label for="inputFirstName" class="col-form-label-lg">名字</label>
+      <input type="text" class="form-control bg-info px-4 py-3" id="inputFirstName" placeholder="小明" required>
+      <div class="invalid-feedback">
+        請輸入名字
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="col-form-label-lg">電話</label>
+      <input type="tel" class="form-control bg-info px-4 py-3" id="inputAddress" placeholder="0912-345-678" required>
+      <div class="invalid-feedback">
+        請輸入電話
+      </div>
+    </div> 
+    <label for="inputCity" class="col-form-label-lg">地址</label>
+    <div class="col-6 mt-0">
+      <label for="inputCity" class="col-form-label-lg visually-hidden">City</label>
+      <select id="inputCity" class="form-select bg-info px-4 py-3" required>
+        <option selected>高雄市</option>
+        <option>台北市</option>
+        <option>台中市</option>
+      </select>
+      <div class="invalid-feedback">
+        請輸入城市
+      </div>
+    </div>
+    <div class="col-6 mt-0">
+      <label for="inputState" class="col-form-label-lg visually-hidden">State</label>
+      <select id="inputState" class="form-select bg-info px-4 py-3" required>
+        <option selected>新興區</option>
+        <option>中正區</option>
+        <option>北區</option>
+      </select>
+      <div class="invalid-feedback">
+        請輸入地區
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputAddreess" class="col-form-label-lg visually-hidden">Address</label>
+      <input type="text" class="form-control bg-info px-4 py-3" id="inputAddreess" placeholder="幸福路 520 號" required>
+      <div class="invalid-feedback">
+        請輸入地址
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-lg btn-secondary text-primary fw-bold w-100 py-3">下一步</button>
+</form>

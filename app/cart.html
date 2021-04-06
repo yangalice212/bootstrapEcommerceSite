@@ -1,0 +1,102 @@
+---
+title: 購物車
+layout: ./app/layout.ejs
+engine: ejs
+current: cart
+---
+
+
+<main class="container cart p-0 p-md-3">
+  <div class="row g-0 g-md-3 align-items-start">
+    <div class="col-lg-8">
+      <h1 class="h4 bg-info text-primary py-3 text-center mb-5">您的購物車</h1>
+      <ul class="list-unstyled text-primary px-4">
+        <li class="d-sm-flex align-items-center border-bottom pb-2 pb-md-4 mb-4">
+          <div class="d-flex">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="bg-cover me-6" alt="product-1">
+            <div class="d-md-flex align-items-center"> 
+              <div class="fw-light me-0 me-sm-6">
+                <h3 class="h5">散文選集</h3>
+                <p class="mb-md-0">NT$ 450</p>
+              </div>
+              <div class="cart-input input-group ms-atuo">
+                <input type="button" class="form-control btn btn-outline-info text-primary" value="-">
+                <input type="text" class="form-control border-info text-center" value="2">
+                <input type="button" class="form-control btn btn-outline-info text-primary" value="+">
+              </div>
+            </div>
+          </div>
+          <div class="price d-flex ms-auto mt-2 mt-md-0 pt-2 pt-md-0">
+            <p class="h5 ms-auto me-md-6 mb-0">NT$ 900</p>
+            <a href="#removeModal" class="d-none d-md-block" data-bs-toggle="modal" data-title="散文選集 2 件"><i class="far fa-trash-alt text-warning"></i></a>
+          </div>
+        </li>
+        <li class="d-sm-flex align-items-center border-bottom pb-2 pb-md-4 mb-4">
+          <div class="d-flex">
+            <img src="https://images.unsplash.com/photo-1549122728-f519709caa9c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGJvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="bg-cover me-6" alt="product-2">
+            <div class="d-md-flex align-items-center"> 
+              <div class="fw-light me-0 me-sm-6">
+                <h3 class="h5">散文選集</h3>
+                <p class="mb-md-0">NT$ 450</p>
+              </div>
+              <div class="cart-input input-group ms-atuo">
+                <input type="button" class="form-control btn btn-outline-info text-primary" value="-">
+                <input type="text" class="form-control border-info text-center" value="2">
+                <input type="button" class="form-control btn btn-outline-info text-primary" value="+">
+              </div>
+            </div>
+          </div>
+          <div class="price d-flex ms-auto mt-2 mt-md-0 pt-2 pt-md-0">
+            <p class="h5 ms-auto me-md-6 mb-0">NT$ 900</p>
+            <a href="#removeModal" class="d-none d-md-block" data-bs-toggle="modal" data-title="散文選集 2 件"><i class="far fa-trash-alt text-warning"></i></a>
+          </div>
+        </li>
+        <li class="d-sm-flex align-items-center border-bottom pb-2 pb-md-4">
+          <div class="d-flex">
+            <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJvb2t8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60" class="bg-cover me-6" alt="product-3">
+            <div class="d-md-flex align-items-center"> 
+              <div class="fw-light me-0 me-sm-6">
+                <h3 class="h5">散文選集</h3>
+                <p class="mb-md-0">NT$ 450</p>
+              </div>
+              <div class="cart-input input-group ms-atuo">
+                <input type="button" class="form-control btn btn-outline-info text-primary" value="-">
+                <input type="text" class="form-control border-info text-center" value="2">
+                <input type="button" class="form-control btn btn-outline-info text-primary" value="+">
+              </div>
+            </div>
+          </div>
+          <div class="price d-flex ms-auto mt-2 mt-md-0 pt-2 pt-md-0">
+            <p class="h5 ms-auto me-md-6 mb-0">NT$ 900</p>
+            <a href="#removeModal" class="d-none d-md-block" data-bs-toggle="modal" data-title="散文選集 2 件"><i class="far fa-trash-alt text-warning"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="cart-detail col-lg-4 px-0">
+      <div class="px-3">
+        <h2 class="border-bottom pb-3 pt-3 text-center">訂單摘要</h2>
+        <table class="table table-borderless">
+          <tbody>
+            <tr class="fw-light">
+              <th class="fw-light">小計</th>
+              <td class="text-end">NT$ 2,700</td>
+            </tr>
+            <tr class="fw-light">
+              <th class="fw-light">運費</th>
+              <td class="text-end">NT$ 300</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="h5">
+              <th>總計</th>
+              <td class="text-end">NT$ 3,000</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <a href="checkout-deliver.html" class="btn btn-secondary text-primary fs-4 fw-bold w-100 py-3 mb-0">結帳</a>
+    </div>
+  </div>
+</main>
+

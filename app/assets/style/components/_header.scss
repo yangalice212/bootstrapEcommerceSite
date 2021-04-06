@@ -1,6 +1,13 @@
 .dropdown-toggle::after {
   display: none;
 }
+.dropdown-menu {
+  min-width: 280px;
+  img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+}
 .dropdown-menu-right {
   right: 0;
   left: auto;
@@ -58,11 +65,29 @@
   }
 }
 
-.product-banner {
-  background: url(https://images.unsplash.com/photo-1605115458649-e8059ed95f70?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDF8fGJvb2tzdG9yZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
-    no-repeat;
+.banner {
   height: 277px;
   @include media-breakpoint-up(md) {
     height: 496px;
   }
+}
+.banner-finish {
+  height: 460px;
+  @include media-breakpoint-down(md) {
+    height: 518px;
+  }
+}
+.checkout-img {
+  width: 120px;
+  height: 80px;
+  @include media-breakpoint-down(lg) {
+    width: 180px;
+    margin-bottom: 8px;
+  }
+}
+.gotop {
+  z-index: 9;
+  font-size: 35px;
+  right: 20px;
+  bottom: 20px;
 }
