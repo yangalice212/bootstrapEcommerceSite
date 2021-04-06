@@ -25,4 +25,21 @@ $(document).ready(function () {
     }, false);
   });
 })();
+
+$(".list-card-favor a").click(function (e) {
+  e.preventDefault();
+  $("i", this).toggleClass("far fa-heart fas fa-heart");
+});
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 60) {
+    $(".gotop").fadeIn();
+  } else {
+    $(".gotop").fadeOut();
+  }
+});
+$(".gotop").click(function () {
+  $("html ,body").animate({
+    scrollTop: 0
+  }, 800);
+});
 //# sourceMappingURL=all.js.map

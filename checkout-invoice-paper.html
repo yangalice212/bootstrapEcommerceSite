@@ -16,26 +16,26 @@
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand me-0" href="index.html"><img src="./assets/images/logo.png" alt=""></a>
+      <a class="navbar-brand me-0" href="index.html"><img src="./assets/images/logo.png" alt="logo" width="170"></a>
       <div class="dropdown ms-0 ms-md-6 order-md-2">
         <a class="dropdown-toggle" href="#" id="shoppingCartDropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fas fa-shopping-cart text-primary"></i>
         </a>
         <ul class="dropdown-menu dropdown-menu-right pb-0" aria-labelledby="shoppingCartDropdownMenu">
           <li class="d-flex mb-2">
-            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="img-fluid bg-cover me-2" alt="">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="img-fluid bg-cover me-2" alt="product-1">
             <h3 class="h5 me-2">散文選集</h3>
             <p class="me-2">NT$ 900</p>
             <a href="#removeModal" class="d-none d-md-block" data-bs-toggle="modal" data-title="散文選集 2 件"><i class="far fa-trash-alt text-warning"></i></a>
           </li>
           <li class="d-flex mb-2">
-              <img src="https://images.unsplash.com/photo-1549122728-f519709caa9c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGJvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="img-fluid bg-cover me-2" alt="">
+              <img src="https://images.unsplash.com/photo-1549122728-f519709caa9c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGJvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="img-fluid bg-cover me-2" alt="product-2">
               <h3 class="h5 me-2">散文選集</h3>
               <p class="me-2">NT$ 900</p>
               <a href="#removeModal" class="d-none d-md-block" data-bs-toggle="modal" data-title="散文選集 2 件"><i class="far fa-trash-alt text-warning"></i></a>
           </li>
           <li class="d-flex mb-2">
-            <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJvb2t8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60" class="img-fluid bg-cover me-2" alt="">
+            <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJvb2t8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60" class="img-fluid bg-cover me-2" alt="product-3">
             <h3 class="h5 me-2">散文選集</h3>
             <p class="me-2">NT$ 900</p>
             <a href="#removeModal" class="d-none d-md-block" data-bs-toggle="modal" data-title="散文選集 2 件"><i class="far fa-trash-alt text-warning"></i></a>
@@ -67,9 +67,13 @@
         
 <form class="row g-0 needs-validation bg-primary text-info" action="finish.html" novalidate>
   <div class="row g-2 px-6 py-5">
-    <div class="bg-primary text-info d-flex align-items-end mb-5 mt-0">
+    <div class="bg-primary text-info d-flex justify-content-between align-items-end mb-5 mt-0">
       <h1 class="h2 mb-0">發票</h1>
-    
+      <div class="process-step d-flex">
+        <div class="step"><i class="fas fa-check-circle"></i></div>
+        <div class="step"><i class="fas fa-check-circle"></i></div>
+        <div class="step active"><i class="fas fa-circle"></i></div>
+      </div>
     </div>
     <div class="col-12 input-group mb-5">
       <a href="checkout-invoice-electronic.html" class="w-50">
@@ -132,31 +136,34 @@
       <div class="col-md-4 d-none d-md-block">
         <div class="text-warning mb-4">
           <h2 class="h4 bg-info pb-3 pt-3 text-center mb-0">訂單摘要</h2>
-          <table class="table table-borderless text-warning border border-info">
-            <tbody>
-              <tr class="fw-light">
-                <th class="fw-light pb-0">小計</th>
-                <td class="text-end pb-0">NT$ 2,700</td>
-              </tr>
-              <tr class="fw-light">
-                <th class="fw-light">運費</th>
-                <td class="text-end">NT$ 300</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr class="h5">
-                <th>總計</th>
-                <td class="text-end">NT$ 3,000</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="pt-2 px-2 border border-info">
+            <table class="table table-borderless text-warning">
+              <tbody>
+                <tr class="fw-light">
+                  <th class="fw-light pb-0">小計</th>
+                  <td class="text-end pb-0">NT$ 2,700</td>
+                </tr>
+                <tr class="fw-light">
+                  <th class="fw-light">運費</th>
+                  <td class="text-end">NT$ 300</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="h5">
+                  <th>總計</th>
+                  <td class="text-end">NT$ 3,000</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          
         </div>
         <div class="text-warning">
           <h2 class="h4 bg-info pb-3 pt-3 text-center mb-0">購物清單</h2>
           <ul class="list-unstyled text-warning border border-info py-3 px-4">
             <li class="d-flex align-items-center mb-3">
               <div class="d-lg-flex align-items-center mx-auto">
-                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="me-lg-4 checkout-img" alt="">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="me-lg-4 checkout-img" alt="product-1">
                   <div class="fw-light">
                     <h3 class="h5 fw-light">散文選集 (2)</h3>
                     <p class="h5 ms-auto mb-0">NT$ 900</p>
@@ -165,7 +172,7 @@
             </li>
             <li class="d-flex align-items-center mb-3">
               <div class="d-lg-flex align-items-center mx-auto">
-                <img src="https://images.unsplash.com/photo-1549122728-f519709caa9c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGJvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="me-lg-4 checkout-img" alt="">
+                <img src="https://images.unsplash.com/photo-1549122728-f519709caa9c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGJvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="me-lg-4 checkout-img" alt="product-2">
                   <div class="fw-light">
                     <h3 class="h5 fw-light">散文選集 (2)</h3>
                     <p class="h5 ms-auto mb-0">NT$ 900</p>
@@ -174,7 +181,7 @@
             </li>
             <li class="d-flex align-items-center">
               <div class="d-lg-flex align-items-center mx-auto">
-                <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJvb2t8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60" class="me-lg-4 checkout-img" alt="">
+                <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJvb2t8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60" class="me-lg-4 checkout-img" alt="product-3">
                   <div class="fw-light">
                     <h3 class="h5 fw-light">散文選集 (2)</h3>
                     <p class="h5 ms-auto mb-0">NT$ 900</p>
@@ -207,15 +214,15 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-md d-flex flex-column">
-          <a href="index.html" class="mb-6 mb-md-0"><img src="./assets/images/logotype-sm-dark.svg" alt="" width="170"></a>
+          <a href="index.html" class="mb-6 mb-md-0"><img src="./assets/images/logotype-sm-dark.svg" alt="logo" width="170"></a>
           <ul class="list-unstyled mt-auto mb-0">
             <li><a href="tel:+0712345678" class="text-decoration-none">07-1234-5678</a></li>
             <li><a href="mailto:book@email.com" class="text-decoration-none">book@mail.com</a></li>
             <li><a href="#" class="text-decoration-none">高雄市新興區幸福路 520 號</a></li>
           </ul>
         </div>
-        <div class="col-md-2 d-none d-md-block">
-          <img src="./assets/images/sm-今天是個吃甜點的好日子.svg" alt="" width="59">
+        <div class="col-md-1 d-none d-md-block">
+          <img src="./assets/images/今天是個看書的好日子.png" alt="今天是個看書的好日子" width="70">
         </div>
       </div>
       <div class="row align-items-end">
@@ -245,6 +252,8 @@
       </div>
     </div>
   </div>
+
+  <div class="gotop position-fixed text-warning"><i class="fas fa-arrow-circle-up"></i></div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
